@@ -1,0 +1,15 @@
+montaje de la app
+
+npm create vite@latest
+name: prueba-tecnica-react
+framework: vanilla
+variant: javascript
+
+$cd prueba-tecnica-react
+$npm install @vitejs@plugin-react -E    
+
+configurar vite
+$npm install react react-dom -E
+despues configurar  vite
+
+

@@ -1,0 +1,12 @@
+# prueba tecnica para juniors y trainners de React en Line Coding
+APIs:
+- Facts Random: https://catfact.ninja/Fact
+- Image Random: https://catass.//catass.com/cat/says/hello
+requerimiento:
+Recupera un hecho aleatorio de gatos y muestra una imagen de un gato con la primera palabra del hecho.
+
+**
+# LINK DE MIDUDEV
+# https://github.com/midudev/aprendiendo-react
+
+
