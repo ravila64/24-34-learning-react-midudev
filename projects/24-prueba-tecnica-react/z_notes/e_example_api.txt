@@ -9,3 +9,15 @@ https://cataas.com/cat/says/hello?fontSize=50&fontColor=red&json=true
 
 const CAT_ENDPOINT_RANDOM_FACT =  'https://catfact.ninja/fact' 
 const CAT_ENDPOINT_IMAGE_URL=`https://cataas.com/cat/says/{firstWord}?fontSize=50&fontColor=red&json=true`
+
+
+// otra forma de escribir el useEffect
+    // can be, se puede escribir asi:
+    // useEffect(() => {
+    //     async function getRandomfact() {
+    //         const res = await fetch(CAT_ENDPOINT_RANDOM_FACT)
+    //         const json = await res.json()
+    //         setFact(json.fact)
+    //     }
+    //     getRandomfact()
+    // }, [])
