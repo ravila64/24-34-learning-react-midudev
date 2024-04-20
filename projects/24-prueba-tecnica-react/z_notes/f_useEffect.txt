@@ -19,3 +19,21 @@ useEffect(() => {
           })
       })
   }, [])
+
+
+// se paso este contenido de use>Effect a handleClick
+ fetch(CAT_ENDPOINT_RANDOM_FACT)
+    .then(res => {
+      if (!res.ok) throw new Error('Error fetching fact')
+      return res.json()
+    })
+    .then(data => {
+      const { fact } = data
+      setFact(fact)
+    })
+    .catch((err) => {
+      console.log('Error ', err)
+      // tanto si hay error en la respuesta
+      // como si hay error en la peticion
+    })
+    

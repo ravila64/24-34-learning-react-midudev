@@ -1,0 +1,19 @@
+    // getRandomFact().then(newFact => setFact(newFcat))
+    // idem igual a getRandomFact().then(setFact)
+
+   esta puede servir
+
+   const handleClik = async () => {
+    const newFact = await getRandomFact()
+    setFact(newFact)
+  }
+  puede ser igual a:
+   const handleClik = async () => {
+    refreshFact()  
+  }
+
+  el refreshFac esta dentro de un hook
+  const refreshFact = () => {
+    getRandomFact().then(newFact => setFact(newFact))
+  }
+
