@@ -1,0 +1,15 @@
+return (
+    <main>
+      <h2>App de Gatitos</h2>
+      <section>
+        {fact && <p>{fact}</p>}
+        {imageUrl && <img src={`${CAT_PREFIX_IMAGE_URL}${imageUrl} `} alt={`Image extracting using the first three words for ${fact}`} />}
+        <img src={`${source}`} alt={`Image extracting using the first three words for ${fact}`} />
+      </section>
+    </main>
+  )
+
+        {imageUrl && <img src={`${source}`} alt={`Image extracting using the first three words for ${fact}`} />}
+        este ultimo no funciono tampoco al llamar la imageUrl
+        // 19.4.2024
+        

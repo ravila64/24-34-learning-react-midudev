@@ -1,0 +1,26 @@
+  // EN EL data, se acceso al .fact
+  useEffect(() => {
+    fetch(CAT_ENDPOINT_RANDOM_FACT)
+      .then(res => res.json())
+      .then(data => {
+        const { fact } = data
+        setFact(fact)
+        const threeFirstWords = fact.split(' ', 3).join(' ')
+        console.log('3 primeras palabras ', threeFirstWords)
+        const CAT_ENDPOINT_IMAGE_URL = `https://cataas.com/cat/says/${threeFirstWords}?fontSize=50&fontColor=red&json=true`
+        console.log('url image ', CAT_ENDPOINT_IMAGE_URL)
+        fetch(CAT_ENDPOINT_IMAGE_URL)
+          .then(res => res.json())
+          .then(response => {
+            const { url } = response
+            source = `https://cataas.com/cat/says/${threeFirstWords}`
+            setImageUrl(source)
+            // setImageUrl(`https://cataas.com${url}`)
+            // console.log('url ', imageUrl)
+            console.log('Source ', source)
+          })
+      })
+  }, [])
+
+  // useEffect nuevo
+  

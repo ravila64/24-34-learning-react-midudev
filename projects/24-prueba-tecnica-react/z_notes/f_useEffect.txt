@@ -5,7 +5,7 @@ useEffect(() => {
         const { fact } = data
         setFact(fact)  // data.fact
         //const firstWord = fact.split(' ')[0]  // primer palabra
-        //const threeFirstWords = fact.split.slice(0, 3).join(' ')
+        //const threeFirstWords = fact.split.slice(0, 3).join(' ') = fact.split(' ', 3).join(' ')
         const threeFirstWords = fact.split(' ', 3).join(' ')
         //console.log('primera palabra ', firstWord)
         console.log('3 primeras palabras ', threeFirstWords)
