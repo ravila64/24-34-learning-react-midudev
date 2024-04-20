@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# folder test. los deje: es codigo
+#tests
+#tests-examples
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
