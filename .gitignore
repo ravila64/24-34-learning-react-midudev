@@ -4,3 +4,7 @@ node_modules
 .DS_Store
 projects/**/.DS_Store
 projects/**/dist
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
