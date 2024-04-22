@@ -15,14 +15,15 @@ export function App() {
   const handleClick = async () => {
     refreshFact()
   }
-
+  const link = `${CAT_PREFIX_IMAGE_URL}${imageUrl}`
+  console.log(link)
   // devuelve el fetch una promesa
   return (
     <main>
       <h1>App de gatitos</h1>
       <button onClick={handleClick}>Get new fact</button>
       {fact && <p>{fact}</p>}
-      {imageUrl && <img src={`${CAT_PREFIX_IMAGE_URL}${imageUrl}`} alt={`Image extracted using the first three words for ${fact}`} />}
+      {imageUrl && <img src={`${imageUrl}`} alt={`Image extracted using the first three words for ${fact}`} />}
       <Other />
     </main>
   )
